@@ -74,7 +74,7 @@ formRef.addEventListener('submit' , (e) => {
 });
 
 function fetchWeatherData(location){
-    fetch(`http://api.weatherapi.com/v1/current.json?key=6a4758bf3eda441994595626231107&q=${location}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=6a4758bf3eda441994595626231107&q=${location}&aqi=no`)
     .then((res) => res.json())
     .then((weatherData) => renderWeatherData(weatherData))
     .catch((err) => console.log('Error ', err));
